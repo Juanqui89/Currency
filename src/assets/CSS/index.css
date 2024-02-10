@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #eee;
-  color: #000;
+  background: #000;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -38,7 +38,7 @@ p.result {
   margin-top: 20px;
 }
 p.rights {
-  background: #000;
+  background: #fff;
   text-align: center;
   position: fixed;
   height: auto;
@@ -47,7 +47,7 @@ p.rights {
   bottom: 0;
   right: 0;
   left: 0;
-  color: #fff;
+  color: #000;
 }
 @media screen and (max-width: 600px) {
   form.content,
@@ -110,5 +110,10 @@ p.rights {
   p.rights {
     font-size: 1.3em;
     font-weight: 500;
+  }
+}
+@media screen and (min-width: 1366px){
+  form.content {
+    margin-top: 100px;
   }
 }
