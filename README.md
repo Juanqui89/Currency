@@ -1,30 +1,5 @@
-# React + TypeScript + Vite
+Currency Converter es una aplicación web desarrollada con React, TypeScript, CSS y Bootstrap que facilita la conversión de monedas de manera rápida y sencilla. Diseñada con una interfaz intuitiva, permite a los usuarios seleccionar las monedas de origen y destino, ingresar la cantidad deseada y obtener el resultado de la conversión. La aplicación utiliza la API de conversión de moneda para proporcionar tasas de cambio en tiempo real, ofreciendo una amplia gama de monedas, incluyendo dólares estadounidenses (USD), euros (EUR), dólares canadienses (CAD) y más.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desarrollada con un diseño responsive gracias a Bootstrap y CSS, Currency Converter se adapta a diversos dispositivos y tamaños de pantalla para brindar una experiencia consistente y accesible. La instalación y uso son sencillos: simplemente clona el repositorio, instala las dependencias y ejecuta la aplicación localmente. Puedes acceder a la aplicación en tu navegador visitando http://localhost:3000.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+La tecnología subyacente incluye React para construir interfaces interactivas, TypeScript para agregar tipado estático al código y CSS con Bootstrap para un diseño moderno y atractivo. Se fomenta la contribución de la comunidad; cualquier sugerencia, problema o mejora puede ser comunicada mediante la creación de un problema o una solicitud de extracción. Currency Converter está diseñado para simplificar las necesidades de conversión de moneda, proporcionando una herramienta útil y eficiente para explorar el mundo de las finanzas internacionales. ¡Gracias por utilizar Currency Converter y esperamos que disfrutes explorando las diversas funciones de esta aplicación!
