@@ -36,6 +36,7 @@ button.btn {
 p.result {
   text-align: center;
   margin-top: 20px;
+  color: #fff;
 }
 p.rights {
   background: #fff;
@@ -112,7 +113,7 @@ p.rights {
     font-weight: 500;
   }
 }
-@media screen and (min-width: 1366px){
+@media screen and (min-width: 1366px) {
   form.content {
     margin-top: 100px;
   }

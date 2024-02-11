@@ -9,18 +9,7 @@ export const App = () => {
   const [selectedCurrencyTo, setSelectedCurrencyTo] = useState("USD");
   const [amount, setAmount] = useState("");
   const [result, setResult] = useState<number | null>(null);
-
-  // const handleSelectFromChange = (e: ChangeEvent<HTMLSelectElement>) => {
-  //   setSelectedCurrencyFrom(e.target.value);
-  // };
-
-  // const handleSelectToChange = (e: ChangeEvent<HTMLSelectElement>) => {
-  //   setSelectedCurrencyTo(e.target.value);
-  // };
-
-  // const handleAmountChange = (e: ChangeEvent<HTMLInputElement>) => {
-  //   setAmount(e.target.value);
-  // };
+  const apiKey = "import.meta.env.VITE_REACT_API_KEY";
 
   useEffect(() => {
     const fetchCurrency = async () => {
@@ -29,8 +18,7 @@ export const App = () => {
           method: "GET",
           url: "https://currencyconverter.p.rapidapi.com/availablecurrencies",
           headers: {
-            "X-RapidAPI-Key":
-              "ccf82274a9msh3bbdb7d48cd9508p12bd09jsn30756a2f7107",
+            "X-RapidAPI-Key": `${apiKey}`,
             "X-RapidAPI-Host": "currencyconverter.p.rapidapi.com",
           },
         });
