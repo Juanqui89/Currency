@@ -49,58 +49,60 @@ export const App = () => {
       <Container>
         <Row>
           <Col>
+            <section>
             <h1>Currency Conversion</h1>
-            <Form onSubmit={handleSubmit} className="content">
-              <Form.Group controlId="selectCurrencyFrom">
-                <Form.Label>Select Currency:</Form.Label>
-                <Form.Select
-                  value={selectedCurrencyFrom}
-                  onChange={(e) => setSelectedCurrencyFrom(e.target.value)}
-                >
-                  <option value="USD">USD</option>
-                  <option value="CAD">CAD</option>
-                  <option value="MXN">MXN</option>
-                  <option value="EUR">EUR</option>
-                  <option value="RUB">RUB</option>
-                  <option value="ARS">ARS</option>
-                  <option value="DOP">DOP</option>
-                </Form.Select>
-              </Form.Group>
+              <Form onSubmit={handleSubmit} className="content">
+                <Form.Group controlId="selectCurrencyFrom">
+                  <Form.Label>Select Currency:</Form.Label>
+                  <Form.Select
+                    value={selectedCurrencyFrom}
+                    onChange={(e) => setSelectedCurrencyFrom(e.target.value)}
+                  >
+                    <option value="USD">USD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="MXN">MXN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="RUB">RUB</option>
+                    <option value="ARS">ARS</option>
+                    <option value="DOP">DOP</option>
+                  </Form.Select>
+                </Form.Group>
 
-              <Form.Group controlId="selectCurrencyTo">
-                <Form.Label>Convert To:</Form.Label>
-                <Form.Select
-                  value={selectedCurrencyTo}
-                  onChange={(e) => setSelectedCurrencyTo(e.target.value)}
-                >
-                  <option value="USD">USD</option>
-                  <option value="CAD">CAD</option>
-                  <option value="MXN">MXN</option>
-                  <option value="EUR">EUR</option>
-                  <option value="RUB">RUB</option>
-                  <option value="ARS">ARS</option>
-                  <option value="DOP">DOP</option>
-                </Form.Select>
-              </Form.Group>
+                <Form.Group controlId="selectCurrencyTo">
+                  <Form.Label>Convert To:</Form.Label>
+                  <Form.Select
+                    value={selectedCurrencyTo}
+                    onChange={(e) => setSelectedCurrencyTo(e.target.value)}
+                  >
+                    <option value="USD">USD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="MXN">MXN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="RUB">RUB</option>
+                    <option value="ARS">ARS</option>
+                    <option value="DOP">DOP</option>
+                  </Form.Select>
+                </Form.Group>
 
-              <Form.Group controlId="amount">
-                <Form.Label>Amount:</Form.Label>
-                <Form.Control
-                  type="number"
-                  value={amount}
-                  onChange={(e) => setAmount(e.target.value)}
-                />
-              </Form.Group>
+                <Form.Group controlId="amount">
+                  <Form.Label>Amount:</Form.Label>
+                  <Form.Control
+                    type="number"
+                    value={amount}
+                    onChange={(e) => setAmount(e.target.value)}
+                  />
+                </Form.Group>
 
-              <Button onClick={handleSubmit} type="button" className="btn">
-                Convert
-              </Button>
-            </Form>
-            {result && (
-              <p className="result">
-                Result: {result.toFixed(2)} {selectedCurrencyTo}
-              </p>
-            )}
+                <Button onClick={handleSubmit} type="button" className="btn-primary btn">
+                  Convert
+                </Button>
+              </Form>
+              {result && (
+                <p className="result">
+                  Result: {result.toFixed(2)} {selectedCurrencyTo}
+                </p>
+              )}
+            </section>
           </Col>
         </Row>
       </Container>
