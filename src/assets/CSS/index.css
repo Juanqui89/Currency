@@ -15,7 +15,7 @@ h1 {
   font-weight: 500;
 }
 section {
-  height: auto;
+  height: 100%;
   text-align: center;
   margin: 0;
   font-weight: 500;
@@ -64,7 +64,7 @@ button.btn:focus {
 }
 p.result {
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0 40px 0;
   color: #fff;
   font-weight: 500;
 }
